@@ -6,6 +6,10 @@ function add(a: number, b: number, showResult: boolean, phrase: string) {
   return result;
 }
 
-const a = 1,
-  b = 2.7,
-  result = add(a, b, true, 'Result is:');
+let a: number;
+a = 1;
+
+let b: number;
+b = 2.7;
+
+const result = add(a, b, true, 'Result is:');
