@@ -1,18 +1,15 @@
-const person: {
-  name: string;
-  age: number;
-  hobbies: string[];
-  role: [number, string];
-} = {
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR
+}
+
+const person = {
   name: 'Isaac',
   age: 24,
   hobbies: ['bass guitar', 'meditation'],
-  role: [2, 'Chief Technology Officer']
+  role: Role.ADMIN
 };
 
-person.role.push('Visionaire'); //! pushed type will not be catched
-// person.role[1] = 10; // assignment type will be catched
-
-let colors: string[] = ['blue', 'green', 'red'];
-
-console.log(person);
+if (person.role === Role.AUTHOR) console.log('is author'); // wont be logged
+if (person.role === Role.ADMIN) console.log('is author'); // will be logged
