@@ -2,8 +2,9 @@ function add(a: number, b: number): number {
   return a + b;
 }
 
-function printResult(num: number): void {
-  console.log('Result: ', num);
-}
+let myValue: Function;
 
-console.log(printResult(7)); // undefined
+myValue = add;
+// myValue = 8; // TS shows error
+
+console.log(myValue(5, 7));
