@@ -15,18 +15,10 @@
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     "target": "ES2022",
-
-    /* Modules */
     "module": "commonjs",
-
-    /* Interop Constraints */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-
-    /* Type Checking */
     "strict": true,
-
-    /* Completeness */
     "skipLibCheck": true
   }
 }
