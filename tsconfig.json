@@ -1,4 +1,16 @@
 {
+  "include": [
+    // files that should be compiled
+
+    "main.ts"
+  ],
+
+  "exclude": [
+    // paths to files which should not be included in compilation when you run tsc on the entire project
+
+    "**/*.dev.ts" // .dev.ts files will not be compiled
+  ],
+
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -99,17 +111,5 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  },
-
-  "exclude": [
-    // paths to files which should not be included in compilation when you run tsc on the entire project
-
-    "**/*.dev.ts" // .dev.ts files will not be compiled
-  ],
-
-  "include": [
-    // files that should be compiled
-
-    "main.ts"
-  ]
+  }
 }
